@@ -23,7 +23,7 @@ def requisition_total():
         price = int(input("Enter the price: $"))
         item[item_requisition] = price
     for item_requisition, price in item.items():
-        print(item_requisition, ": $", price) # Uses user imput to define each item and the price. It will loop the amount of times the user put into item_amount 
+        print(item_requisition, ": $", price) # User imput defines each item and price. It will loop the amount of times the user put into item_amount 
     total = 0
     for price in item.values():
         total = total + price
