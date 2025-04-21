@@ -18,7 +18,7 @@ class RequisitionSystem:
         self.date = input ("Enter Date: ")
         self.staff_id = input ("Enter Staff ID: ")
         self.name = input ("Enter Name: ")#Allows user input
-        self.requisition_id += 1 # Requisition ID will continue to increase by 1 from 1000 for each different person submitting requests
+        self.requisition_id += 1 # Requisition ID will continue to increase by 1 from 1000 for each person assigned
 
     def requisition_details(self):
         item_amount = int(input("How many different items do you request?: "))
@@ -34,7 +34,7 @@ class RequisitionSystem:
             self.status = "Approved"
             mesh_id = str(self.requisition_id)
             self.approval_ref = self.staff_id + mesh_id[+1:]
-            RequisitionSystem.approved += 1 #Sets status to "Approved" if total is less than 500. An approval reference number is created by combining the staff ID with the last 3 numbers of the reqisition ID. It adds 1 to the total number of approved requisitions
+            RequisitionSystem.approved += 1 #Sets status to "Approved" if total is less than 500. Approval reference number combines the staff ID with the last 3 numbers of the reqisition ID. It adds 1 to the total number of approved requisitions
         else:
             self.status = "Pending"
             RequisitionSystem.pending += 1
