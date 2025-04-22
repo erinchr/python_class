@@ -5,7 +5,7 @@
     #avg=total/len(kwargs)
     #print (avg)
     #print(total)
-    ##
+    ## The title of this program is missleading. This was previously a copy for the args demonstration. The computer was lagging too much to create a new project and keep up with the lecture
 class Ticket:
     ticket_counter = 1 #begin from here
     tickets = []
