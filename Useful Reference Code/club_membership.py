@@ -1,4 +1,4 @@
-class club_membership:
+class club_membership: #Copied from Simon Yusuf
     counter =10000
     total_registered = 0
     total_approved = 0
