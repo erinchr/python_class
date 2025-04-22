@@ -1,4 +1,4 @@
-counter = 10
+counter = 10 #Copied from Simon Yusuf
 def gym_member():
     date=input("Enter date: DD/MM/YYYY:")
     name=input("Enter name: ")
